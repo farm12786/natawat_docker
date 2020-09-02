@@ -7,7 +7,8 @@ app = Flask(__name__)
 def info():
     return jsonify({
         'status': 'success',
-        'name':'natawat songnuan'
+        'name':'natawat songnuan',
+        'data': '1'
     })
 
 @app.route('/api/v1/getdata', methods=['GET'])
